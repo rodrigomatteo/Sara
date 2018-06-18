@@ -1,25 +1,12 @@
 <template>
     <require from="nav-bar.html"></require>
-    <require from="side-bar.html"></require>
-    <require from="dashboard.html"></require>
     <require from="styles/style.css"></require>
 
     <!-- Bootstrap NavBar -->
-    <nav-bar router.bind="router"></nav-bar>
+    <nav-bar></nav-bar>
     <!-- NavBar END -->
-    
-    <!-- Bootstrap row -->
-    <div class="row" id="body-row">
-      <!-- Sidebar -->
-      <div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-1">
-        <side-bar></side-bar>
-      </div>
 
-      <!-- MAIN -->
-        <div class="col py-3">
-          <router-view></router-view>
-        </div>
-
-    </div>
-
+    <!-- Bootstrap Content -->
+    <router-view></router-view>
+    <!-- Content END -->
 </template>

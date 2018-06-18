@@ -2,7 +2,9 @@ export class App {
   configureRouter(config, router) {
     config.title = 'Sara';
     config.map([
-      { route: ['', 'dashboard'], name: 'dashboard',      moduleId: 'dashboard',      nav: true, title: 'Dashboard' }
+      { route: '', redirect: 'content' },
+      { route: 'content', name: 'content', moduleId: 'content', nav: true, title: 'Root' },
+      { route: 'schedule', name: 'schedule', moduleId: 'schedule', nav: true, title: 'Schedule1' }
     ]);
 
     this.router = router;
