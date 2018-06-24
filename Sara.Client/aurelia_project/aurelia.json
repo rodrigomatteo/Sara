@@ -81,7 +81,23 @@
             "main": "aurelia-testing",
             "env": "dev"
           },
-          "text"
+          "text",
+          {
+            "name": "fullcalendar",
+            "main": "dist/fullcalendar.js",
+            "path": "../node_modules/fullcalendar",
+            "resources": [
+              "dist/fullcalendar.css",
+              "dist/fullcalendar.min.css"
+            ]
+          },
+          {
+            "name": "moment",
+            "main": "./moment.js",
+            "path": "../node_modules/moment",
+            "resources": []
+          },
+          "jquery"
         ]
       }
     ],

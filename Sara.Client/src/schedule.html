@@ -1,4 +1,6 @@
 <template>
+    <require from="calendar"></require>
+
     <!-- FILTERS -->
     <div class="row">
         <div class="container-fluid pb-1 px-1">
@@ -38,6 +40,13 @@
     <div class="row">
         <div class="container-fluid pb-3 px-3">
             <div id='calendar' class="border"></div>
+            <calendar 
+                events.bind="events"
+                view="month" 
+                day-click.bind="test" 
+                event-click.bind="eventClicked" 
+                options.bind="{ eventLimit: true }">
+            </calendar>
         </div>
     </div>
 </template>
