@@ -70,6 +70,7 @@ export class CalendarCustomElement {
         eventLimit: 4,
         timeFormat: 'HH:mm',
         navLinks: true,
+        defaultView: this.view || 'month',
         weekends: this.weekends,
         dayClick: (date, jsEvent, view) => this.dayClick(date, jsEvent, view),
         eventClick: (event) => this.eventClick(event),

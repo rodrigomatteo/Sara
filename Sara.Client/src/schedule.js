@@ -19,4 +19,8 @@ export class Schedule {
       .then(response => response.json())
       .then(events => this.events = events);
   }
+
+  eventClicked(event) {
+    //alert(event);
+  }
 }
