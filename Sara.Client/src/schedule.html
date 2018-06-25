@@ -42,9 +42,8 @@
             <div id='calendar' class="border"></div>
             <calendar 
                 events.bind="events"
-                view="month" 
                 day-click.bind="test" 
-                event-click.bind="eventClicked" 
+                event-click.bind="eventRenderClicked"
                 options.bind="{ eventLimit: true }">
             </calendar>
         </div>

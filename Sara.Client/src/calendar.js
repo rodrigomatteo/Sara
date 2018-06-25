@@ -13,6 +13,7 @@ export class CalendarCustomElement {
     @bindable weekends = true;
     @bindable dayClick;
     @bindable eventClick;
+    @bindable eventRender;
     @bindable events = [];
     @bindable options;
     @bindable view;
@@ -46,11 +47,33 @@ export class CalendarCustomElement {
       };
 
       let defaultValues = {
-        defaultView: this.view || 'month',
+        header: {
+          left: '',
+          center: 'title',
+          right: 'agendaDay,agendaWeek,month prev,next today'
+        },
+        buttonText: {
+          today: 'hoy',
+          month: 'mes',
+          week: 'semana',
+          day: 'día'
+        },
+        height: 'auto',
+        themeSystem: 'bootstrap4',
+        locale: 'es',
+        dayNames: ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'],
+        dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
+        monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Setiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+        monthNamesShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Set', 'Oct', 'Nov', 'Dic'],
+        showNonCurrentDates: false,
+        fixedWeekCount: false,
+        eventLimit: 4,
+        timeFormat: 'HH:mm',
+        navLinks: true,
         weekends: this.weekends,
-        firstDay: 1,
         dayClick: (date, jsEvent, view) => this.dayClick(date, jsEvent, view),
         eventClick: (event) => this.eventClick(event),
+        eventRenderClick: (eventObj, $el) => this.eventRender(eventObj, $el),
         events: eventSource
       };
 
