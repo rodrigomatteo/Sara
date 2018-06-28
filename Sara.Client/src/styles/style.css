@@ -88,6 +88,16 @@ a:hover, a:focus {
     font-size: 1rem;
 }
 
+.greenField{
+    width: 100%;
+    background: url('https://openclipart.org/download/233797/Soccer-Field.svg') no-repeat center;
+}
+.greenField:before{
+    content: "";
+    display: block;
+    padding-top: 50%;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  .score {
     font-size: 3rem;

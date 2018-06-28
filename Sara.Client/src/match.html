@@ -1,62 +1,89 @@
 <template>
-    <!-- SCORE -->
     <div class="row">
-        <div class="col-12">
-            <div class="row h-100">
-                <div class="col-5">
-                    <figure class="figure float-right" style="text-align: center">
-                        <img src="images/generic300x150.png" class="img-fluid rounded " alt="Home team">
-                        <figcaption class="figure-caption">RUSIA</figcaption>
-                    </figure>
-                </div>
-                <div class="col-2 text-nowrap"><h2 class="text-center display-4 my-auto my-sm-4 my-md-4 my-lg-4 my score"><strong>0 : 0</strong></h1></div>
-                <div class="col-5">
-                    <figure class="figure float-left" style="text-align: center">
-                        <img src="images/generic300x150.png" class="img-fluid rounded" alt="Away team">
-                        <figcaption class="figure-caption">ARABIA SAUDITA</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- MATCHDAY AND GROP -->
-    <div class="row">
-        <div class="col-12 text-center text-nowrap"><h4>GRUP0 A</h4></div>
-        <div class="col-12 text-center text-nowrap"><h3><a route-href="matchday">JORNADA 1</a></h3></div>
-    </div>
-    <!-- TIMELINE -->
-    <div class="row">
-        <div class="col-2"></div>
-        <div class="col-4 mx-3 mb-3">
+        <div class="container">
+            <!-- SCORE -->
             <div class="row">
-                <div><span><i class="far fa-futbol"></i>&nbsp&nbspO. PERALTA</span></div>
-                <div class="px-3"><span>61'</span></div>
+                <div class="col-12">
+                    <div class="row h-100">
+                        <div class="col-5">
+                            <figure class="figure float-right" style="text-align: center">
+                                <img src="images/generic300x150.png" class="img-fluid rounded " alt="Home team">
+                                <figcaption class="figure-caption">RUSIA</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-2 text-nowrap"><h2 class="text-center display-4 my-auto my-sm-4 my-md-4 my-lg-4 my score"><strong>0 : 0</strong></h1></div>
+                        <div class="col-5">
+                            <figure class="figure float-left" style="text-align: center">
+                                <img src="images/generic300x150.png" class="img-fluid rounded" alt="Away team">
+                                <figcaption class="figure-caption">ARABIA SAUDITA</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MATCHDAY AND GROP -->
+            <div class="row">
+                <div class="col-12 text-center text-nowrap"><h4>GRUP0 A</h4></div>
+                <div class="col-12 text-center text-nowrap"><h3><a route-href="matchday">JORNADA 1</a></h3></div>
+            </div>
+            <!-- TIMELINE -->
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-4 mx-3 mb-3">
+                    <div class="row">
+                        <div><span><i class="far fa-futbol"></i>&nbsp&nbspO. PERALTA</span></div>
+                        <div class="px-3"><span>61'</span></div>
+                    </div>
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <!-- MATCH INFO -->
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-4 mx-3  mb-3">
+                    <div class="row"><span><i class="fas fa-thumbtack"></i>&nbsp&nbsp&nbspMonumental de River, Moscú</span></div>
+                    <div class="row"><span><i class="fas fa-users"></i>&nbsp&nbsp78,568</span></div>
+                    <div class="row"><span><i class="fas fa-sun"></i>&nbsp&nbspSoleado - <i class="fas fa-thermometer"></i>&nbsp&nbsp23 °C - <i class="fas fa-tint"></i></span></div>
+                </div>
+                <div class="col-4">
+                    <div class="row"><span><i class="fas fa-table"></i>&nbsp&nbspNestor Pitana</span></div>
+                    <div class="row"><span><i class="fas fa-thumbtack"></i>&nbsp&nbsp&nbspHector Murillo</span></div>
+                    <div class="row"><span><i class="fas fa-users"></i>&nbsp&nbspVictor Hugo Carrillo</span></div>
+                    <div class="row"><span><i class="fas fa-sun"></i>&nbsp&nbspCuarto Arbitro</span></div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <!-- LINE UP -->
+            <div class="row">
+                <div class="container-fluid greenField">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-4">
-        </div>
-        <div class="col-2"></div>
-    </div>
-    <!-- MATCH INFO -->
-    <div class="row">
-        <div class="col-2"></div>
-        <div class="col-4 mx-3  mb-3">
-            <div class="row"><span><i class="fas fa-thumbtack"></i>&nbsp&nbsp&nbspMonumental de River, Moscú</span></div>
-            <div class="row"><span><i class="fas fa-users"></i>&nbsp&nbsp78,568</span></div>
-            <div class="row"><span><i class="fas fa-sun"></i>&nbsp&nbspSoleado - <i class="fas fa-thermometer"></i>&nbsp&nbsp23 °C - <i class="fas fa-tint"></i></span></div>
-        </div>
-        <div class="col-4">
-            <div class="row"><span><i class="fas fa-table"></i>&nbsp&nbspNestor Pitana</span></div>
-            <div class="row"><span><i class="fas fa-thumbtack"></i>&nbsp&nbsp&nbspHector Murillo</span></div>
-            <div class="row"><span><i class="fas fa-users"></i>&nbsp&nbspVictor Hugo Carrillo</span></div>
-            <div class="row"><span><i class="fas fa-sun"></i>&nbsp&nbspCuarto Arbitro</span></div>
-        </div>
-        <div class="col-2"></div>
-    </div>
-    <!-- LINE UP -->
-    <div class="row h-100">
-        <div class="col-2"></div>
-        <div class="col-8 container-fluid" style="background-image: url('https://openclipart.org/download/233797/Soccer-Field.svg'); background-repeat:no-repeat;"></div>
-        <div class="col-2"></div>
     </div>
 </template>
