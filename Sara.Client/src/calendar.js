@@ -13,7 +13,7 @@ export class CalendarCustomElement {
     @bindable weekends = true;
     @bindable dayClick;
     @bindable eventClick;
-    @bindable eventRender;
+    @bindable renderClick;
     @bindable events = [];
     @bindable options;
     @bindable view;
@@ -74,7 +74,7 @@ export class CalendarCustomElement {
         weekends: this.weekends,
         dayClick: (date, jsEvent, view) => this.dayClick(date, jsEvent, view),
         eventClick: (event) => this.eventClick(event),
-        eventRenderClick: (eventObj, $el) => this.eventRender(eventObj, $el),
+        eventRender: (eventObj, $el) => this.renderClick(eventObj, $el),
         events: eventSource
       };
 
