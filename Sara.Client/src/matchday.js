@@ -3,24 +3,27 @@ import {HttpClient} from 'aurelia-fetch-client';
 
 @inject(HttpClient)
 export class Matchday {
-    events = [];
+  events = [];
 
-    constructor(http) {
-      http.configure(c => {
-        c.useStandardConfiguration()
-          .withBaseUrl('http://localhost:3000/');
-      });
+  constructor(http) {
+    http.configure(c => {
+      c.useStandardConfiguration()
+        .withBaseUrl('http://localhost:3000/');
+    });
 
-      this.http = http;
-    }
+    this.http = http;
+  }
 
-    activate() {
-      return this.http.fetch('events')
-        .then(response => response.json())
-        .then(events => this.events = events);
-    }
+  activate() {
+    return this.http.fetch('events')
+      .then(response => response.json())
+      .then(events => this.events = events);
+  }
 
-    eventClicked(event) {
-      //alert(event);
-    }
+  eventClicked(event) {
+    //alert(event);
+  }
+
+  eventRenderClicked(eventObj, element) {
+  }
 }
