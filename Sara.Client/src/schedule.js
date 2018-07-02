@@ -25,7 +25,7 @@ export class Schedule {
   }
 
   eventRenderClicked(eventObj, element) {
-    /*element.popover(
+    element.popover(
       {
         html: true,
         title: '#01 - ' + eventObj.extendedTitle,
@@ -39,6 +39,6 @@ export class Schedule {
         placement: 'top',
         container: 'body'
       }
-    );*/
+    );
   }
 }
