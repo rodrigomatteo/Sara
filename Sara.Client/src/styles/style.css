@@ -98,6 +98,16 @@ a:hover, a:focus {
     padding-top: 50%;
 }
 
+.rectangle{
+    width: 100%;
+}
+.rectangle:before{
+    content: "";
+    display: block;
+    padding-top: 50%;
+}
+
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  .score {
     font-size: 3rem;
