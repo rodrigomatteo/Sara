@@ -1,0 +1,49 @@
+svg {
+    width: 100%;
+  }
+  svg .turf {
+    fill: #396739;
+  }
+  svg .cell-free {
+    fill: #7F7C5D;
+  }
+  svg .cell-reserved, svg .cell-free:hover {
+    fill: url(#striped);
+  }
+  svg .cell-sold {
+    fill: transparent;
+  }
+  svg .stripe {
+    stroke: #7F7C5D;
+    stroke-width: 1;
+  }
+  svg .line {
+    stroke: #FFFFFF;
+    stroke-width: 1.2;
+    fill: none;
+  }
+  svg .curve {
+    stroke: #FFFFFF;
+    stroke-width: 1.2;
+    fill: none;
+  }
+  svg .dot {
+    stroke: #FFFFFF;
+    fill: #FFFFFF;
+    r: 1.5;
+  }
+  svg .goal {
+    stroke: #FFFFFF;
+    stroke-width: 0.75;
+    fill: url(#goal);
+  }
+  svg .goal-stripe {
+    stroke: #FFFFFF;
+    stroke-width: 1;
+  }
+  svg .goalKeeper {
+    stroke: #6E2222;
+    fill: #C5ADAD;
+    r: 20;
+  }
+ 
