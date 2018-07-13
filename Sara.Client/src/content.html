@@ -3,22 +3,6 @@
     <div class="container-fluid">
         <!-- Bootstrap row -->
         <div class="row">
-            <!-- Sidebar -->
-            <div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-1">
-                <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
-                <!-- Bootstrap List Group -->
-                <ul class="nav list-group sticky-top sticky-offset">
-                    <li repeat.for="row of router.navigation">
-                        <a href.bind="row.href" class="bg-dark list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-start align-items-center">
-                                <img src="src/images/fifawc2018.png" class="menu-collapsed mx-auto img-fluid d-block" alt="">
-                            </div>
-                        </a>
-                    </li>   
-                </ul>
-                <!-- List Group END-->
-            </div>
-
             <!-- MAIN -->
             <div class="col py-3">
                 <router-view name="default"></router-view>
