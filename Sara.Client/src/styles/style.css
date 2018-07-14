@@ -85,10 +85,6 @@ a:hover, a:focus {
     font-size: 1rem;
 }
 
-.greenField{
-    background: url('https://openclipart.org/download/233797/Soccer-Field.svg') no-repeat center;
-}
-
 .rectangle{
     width: 100%;
 }
