@@ -94,6 +94,17 @@ a:hover, a:focus {
     padding-top: 50%;
 }
 
+.no-padding{
+    padding: 0;
+}
+
+.sidenav {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    overflow-y: scroll;
+  }
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  .score {
     font-size: 3rem;
@@ -101,9 +112,10 @@ a:hover, a:focus {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { .score {
-    font-size: 3.5rem;
-  }
+@media (min-width: 768px) { 
+    .score {
+        font-size: 3.5rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */

@@ -1,51 +1,129 @@
 <template>
     <require from="calendar"></require>
+    <require from="styles/sidebar.css"></require>
 
     <div class="container-fluid">
         <!-- CALENDAR -->
         <div class="row">
+            <div class="col-2 sidebar-expanded d-none d-md-block ">
             <!-- Sidebar filter -->
-            <div class="card">
+            <div class="card sidenav">
                 <article class="card-group-item">
-                    <header class="card-header">
-                      <center>COMPETICIONES</center>
-                    </header>
+                    <header class="card-header"><center>COMPETICIONES</center></header>
                     <div class="card-body">
-                      <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="Check1"/>
-                          <label class="custom-control-label" for="Check1">MUNDIAL RUSIA 2018 </label>
-                          <span class="float-right badge badge-secondary round">62/64</span>
-                      </div>
-                      <div class="custom-control custom-checkbox">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="Check1"/>
+                        <label class="custom-control-label" for="Check1">RUSIA 2018 </label>
+                        <span class="float-right badge badge-secondary round">62/64</span>
+                    </div>
+                    <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="Check2"/>
                         <label class="custom-control-label" for="Check2">LIGA BBVA</label>
                         <span class="float-right badge badge-light round">0/0</span>
-                      </div>
-                      <div class="custom-control custom-checkbox">
+                    </div>
+                    <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="Check3"/>
                         <label class="custom-control-label" for="Check3">PREMIER LEAGUE</label>
                         <span class="float-right badge badge-light round">0/0</span>
-                      </div>
-                      <div class="custom-control custom-checkbox">
+                    </div>
+                    <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="Check4">
                         <label class="custom-control-label" for="Check4">LIGA A</label>
                         <span class="float-right badge badge-light round">0/0</span>
-                      </div>
-                      <div class="custom-control custom-checkbox">
+                    </div>
+                    <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="Check5">
                         <label class="custom-control-label" for="Check4">LIGUE 1</label>
                         <span class="float-right badge badge-light round">0/0</span>
-                      </div>
-                      <div class="custom-control custom-checkbox">
+                    </div>
+                    <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="Check6">
                         <label class="custom-control-label" for="Check4">BUNDESLIGA</label>
                         <span class="float-right badge badge-light round">0/0</span>
-                      </div>
+                    </div>
+                    </div>
+                </article>
+                <article class="card-group-item">
+                    <header class="card-header"><center>FILTROS</center></header>
+                    <div class="card-body">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="Check10"/>
+                        <label class="custom-control-label" for="Check10">Local</label>
+                        <span class="float-right badge badge-light round">0/0</span>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="Check11"/>
+                        <label class="custom-control-label" for="Check11">Visita</label>
+                        <span class="float-right badge badge-light round">0/0</span>
+                    </div>
+                    </div>
+                </article>
+                <article class="card-group-item">
+                    <header class="card-header no-padding"><span class="pl-4">Grupos</span></header>
+                    <div class="pl-4 py-2">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="Check10"/>
+                            <label class="custom-control-label" for="Check10">Grupo A</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="Check10"/>
+                            <label class="custom-control-label" for="Check10">Grupo B</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="Check10"/>
+                            <label class="custom-control-label" for="Check10">Grupo C</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="Check10"/>
+                            <label class="custom-control-label" for="Check10">Grupo D</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="Check10"/>
+                            <label class="custom-control-label" for="Check10">Grupo E</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="Check10"/>
+                            <label class="custom-control-label" for="Check10">Grupo F</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="Check10"/>
+                            <label class="custom-control-label" for="Check10">Grupo G</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="Check10"/>
+                            <label class="custom-control-label" for="Check10">Grupo H</label>
+                        </div>
+                    </div>
+                </article>
+                <article class="card-group-item">
+                    <header class="card-header no-padding"><span class="pl-4">Fase</span></header>
+                    <div class="pl-4 py-2">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="Check10"/>
+                            <label class="custom-control-label" for="Check10">Grupos</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="Check10"/>
+                            <label class="custom-control-label" for="Check10">Octavos de final</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="Check10"/>
+                            <label class="custom-control-label" for="Check10">Cuartos de final</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="Check10"/>
+                            <label class="custom-control-label" for="Check10">Semifinales</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="Check10"/>
+                            <label class="custom-control-label" for="Check10">Final</label>
+                        </div>
                     </div>
                 </article>
             </div>
+            </div>
 
-            <div class="container-fluid pb-3 px-3 py-3 col-9">
+            <div class="container py-3 col-9">
                 <calendar 
                     events.bind="events"
                     day-click.bind="test" 
