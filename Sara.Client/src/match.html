@@ -1,22 +1,20 @@
 <template>
     <require from="styles/field.css"></require>
         
-    <div class="row">
         <div class="container">
             <!-- SCORE -->
             <div class="row">
                 <div class="col-12">
                     <div class="row h-100">
                         <div class="col-4 img-thumbnail flag flag-icon-background flag-icon-fr rectangle" title="ad" id="ad"></div>
-                        <div class="col-4 text-nowrap"><h2 class="text-center display-4 my-auto my-sm-4 my-md-4 my-lg-4 my score"><strong>0 : 0</strong></h1></div>
+                        <div class="col-4 text-nowrap text-center">
+                          <h2 class="text-center display-4 my-auto my-sm-4 my-md-4 my-lg-4 my score"><strong>0 : 0</strong></h2>
+                          <h4>GRUP0 A</h4>
+                          <h4><a route-href="matchday">JORNADA 1</a></h4>
+                        </div>
                         <div class="col-4 img-thumbnail flag flag-icon-background flag-icon-uy rectangle" title="ad" id="ad"></div>
                     </div>
                 </div>
-            </div>
-            <!-- MATCHDAY AND GROP -->
-            <div class="row">
-                <div class="col-12 text-center text-nowrap"><h4>GRUP0 A</h4></div>
-                <div class="col-12 text-center text-nowrap"><h3><a route-href="matchday">JORNADA 1</a></h3></div>
             </div>
             <!-- TIMELINE -->
             <div class="row">
@@ -117,7 +115,5 @@
                 </div>
             </div>
         </div>
-    </div>
-
         
 </template>
