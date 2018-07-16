@@ -81,17 +81,16 @@ a:hover, a:focus {
     background-color: #333;
 }
 
+.flag{
+  font-size: 3rem;
+}
+
 .score {
     font-size: 1rem;
 }
 
-.rectangle{
-    width: 100%;
-}
-.rectangle:before{
-    content: "";
-    display: block;
-    padding-top: 50%;
+.score-info{
+  font-size: 0.5rem;
 }
 
 .no-padding{
@@ -103,29 +102,56 @@ a:hover, a:focus {
     position: fixed;
     left: 0;
     overflow-y: scroll;
-  }
+}
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  .score {
+@media (min-width: 576px) {  
+  .score {
     font-size: 3rem;
+  }
+  .flag{
+    font-size: 6rem;
+  }
+  .score-info{
+    font-size: 1rem;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-    .score {
-        font-size: 3.5rem;
-    }
+  .score {
+    font-size: 3.5rem;
+  }
+  .flag{
+    font-size: 8rem;
+  }
+  .score-info{
+    font-size: 1rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { .score {
+@media (min-width: 992px) { 
+  .score {
     font-size: 4rem;
+  }
+  .flag{
+    font-size: 10rem;
+  }
+  .score-info{
+    font-size: 1.5rem;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { .score {
-    font-size: 4.5rem;
- }
+@media (min-width: 1200px) { 
+  .score {
+      font-size: 4.5rem;
+  }
+  .flag{
+    font-size: 15rem;
+  }
+  .score-info{
+    font-size: 2rem;
+  }
 }
