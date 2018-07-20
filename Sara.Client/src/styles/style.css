@@ -93,7 +93,7 @@ a:hover, a:focus {
   font-size: 0.5rem;
 }
 
-.score-info-additional{
+.score-default-color{
   color: black;
 }
 
@@ -106,6 +106,21 @@ a:hover, a:focus {
     position: fixed;
     left: 0;
     overflow-y: scroll;
+}
+
+.ontop{
+  position: relative;
+  z-index: 1000;
+}
+
+.score-info-title {
+  min-height: 50px;
+  height: 250px;
+  padding-top: 20px;
+  background: #bbccc5f3;
+  position: relative;
+  border-top: 3px solid #01d099;
+  border-bottom: 3px solid #01d099;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -159,7 +174,7 @@ a:hover, a:focus {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
   .score {
-      font-size: 3.5rem;
+    font-size: 3.5rem;
   }
   .flag{
     font-size: 12rem;

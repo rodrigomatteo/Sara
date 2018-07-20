@@ -3,7 +3,7 @@ import 'bootstrap';
 
 export class App {
   configureRouter(config, router) {
-    config.title = 'Sara';
+    config.title = 'Rose';
     config.map([
       { route: '', name: 'root', redirect: 'schedule' },
       { route: 'content', name: 'content', moduleId: 'content', nav: true, title: 'Dashboard' },
