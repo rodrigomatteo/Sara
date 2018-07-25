@@ -1,178 +1,168 @@
 <template>
-    <require from="styles/field.css"></require>
-        
-        <div class="container-fluid">
-            <!-- SCORE -->
-            <div class="row score-info-title">
-              <div class="col-4 text-center">
-                  <span class="flag-icon flag-icon-fr my-auto flag"></span>
-                  <h4 class="ontop"><a route-href="matchday">FRANCIA</a></h4>
-              </div>
-              <div class="col-4 text-nowrap text-center">
-                <h2 class="display-4 score">
-                  <strong>0 : 0</strong>
-                </h2>
-                <div class="score-info">
-                  <button type="button" class="score-default-color btn btn-link"><<</button>
-                  <a class="score-default-color" route-href="matchday">GRUPO A</a>
-                  <button type="button" class="score-default-color btn btn-link">>></button>
-                </div>
-                <div>
-                  <button type="button" class="score-default-color btn btn-link"><<</button>
-                  <a route-href="matchday" class="score-default-color">JORNADA 1</a>
-                  <button type="button" class="score-default-color btn btn-link">>></button>
-                </div>
-                <div>
-                  <button type="button" class="score-default-color btn btn-link"><<</button>
-                  <a route-href="matchday" class="score-info-additional score-default-color">Jueves 21 de Junio 2018 10:00</a>
-                  <button type="button" class="score-default-color btn btn-link">>></button>
-                </div>
-              </div>
-              <div class="col-4 text-center">
-                  <span class="flag-icon flag-icon-pe my-auto flag"></span>
-                  <h4 class="ontop"><a route-href="matchday">PERU</a></h4>
-              </div>
-            </div>
-            <!-- TIMELINE -->
+  <require from="styles/field.css"></require>
+  <require from="styles/weather-icons.css"></require>
+  <require from="styles/weather-icons-wind.css"></require>
+  
+  <div class="container-fluid">
+    <!-- SCORE -->
+    <div class="row score-info-title">
+      <div class="col-4 text-center">
+          <span class="flag-icon flag-icon-fr my-auto flag"></span>
+          <h4 class="ontop"><a route-href="matchday">FRANCIA</a></h4>
+      </div>
+      <div class="col-4 text-nowrap text-center">
+        <h2 class="display-4 score">
+          <strong>0 : 0</strong>
+        </h2>
+        <div class="score-info">
+          <button type="button" class="score-default-color btn btn-link"><<</button>
+          <a class="score-default-color" route-href="matchday">GRUPO A</a>
+          <button type="button" class="score-default-color btn btn-link">>></button>
+        </div>
+      </div>
+      <div class="col-4 text-center">
+          <span class="flag-icon flag-icon-pe my-auto flag"></span>
+          <h4 class="ontop"><a route-href="matchday">PERU</a></h4>
+      </div>
+    </div>
+    <!-- TIMELINE -->
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-4 mx-3 mb-3">
             <div class="row">
-                <div class="col-2"></div>
-                <div class="col-4 mx-3 mb-3">
-                    <div class="row">
-                        <div><span><i class="far fa-futbol"></i>&nbsp&nbspO. PERALTA</span></div>
-                        <div class="px-3"><span>61'</span></div>
-                    </div>
-                </div>
-                <div class="col-4">
-                </div>
-                <div class="col-2"></div>
-            </div>
-            <!-- MATCH INFO -->
-            <div class="row">
-
-              <div class="col-2 mb-1 px-1 text-white">
-                <img class="card-img img-responsive" src="http://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/11/29/15119690264622.jpg" alt="Card image">
-                <div class="card-img-overlay pt-1 pl-2">
-                  <span class="float-left badge badge-light round">Luzhniki</span><span class="float-right badge badge-light round">78241 / 80000</span>
-                </div>
-              </div>                        
-
-              <div class="col-2 mb-1 px-1">
-                <div class="card">
-                  <div class="detail">
-                    <div class="detail-images">
-                      <p>Nestor Pitana</p>
-                      <p>Juez de Linea 1 Pitana</p>
-                      <p>Juez de Linea 2</p>
-                    </div>
-                    <p>VAR</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-2 mb-1 px-1">
-                <img class="card-img img-responsive" src="http://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/11/29/15119690264622.jpg" alt="Card image">
-                <div class="card-img-overlay pt-1">
-                  <span class="float-left badge badge-light round">Luzhniki</span><span class="float-right badge badge-light round">78241 / 80000</span>
-                </div>
-              </div>
- 
-              <div class="col-2 mb-1 px-1">
-                <img class="card-img img-responsive" src="http://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/11/29/15119690264622.jpg" alt="Card image">
-                <div class="card-img-overlay pt-1">
-                  <span class="float-left badge badge-light round">Luzhniki</span><span class="float-right badge badge-light round">78241 / 80000</span>
-                </div>
-              </div>
-
-              <div class="col-2 mb-1 px-1">
-                <img class="card-img img-responsive" src="http://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/11/29/15119690264622.jpg" alt="Card image">
-                <div class="card-img-overlay pt-1">
-                  <span class="float-left badge badge-light round">Luzhniki</span><span class="float-right badge badge-light round">78241 / 80000</span>
-                </div>
-              </div>
-
-              <div class="col-2 mb-1 px-1">
-                <img class="card-img img-responsive" src="http://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/11/29/15119690264622.jpg" alt="Card image">
-                <div class="card-img-overlay pt-1">
-                  <span class="float-left badge badge-light round">Luzhniki</span><span class="float-right badge badge-light round">78241 / 80000</span>
-                </div>
-              </div>
-
-            </div>
-            <!-- LINE UP -->
-            <div class="row">
-              <div class="container-fluid text-center py-4">
-                <div class="row">
-                  <div class="col-2"></div>
-                  <div class="col-8">
-                    <svg viewBox="0 0 1150 780" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <pattern id="striped" patternUnits="userSpaceOnUse" width="4" height="4">
-                                <rect x="0" y="0" width="4" height="4" fill="transparent" />
-                                <path d="M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2" class="stripe" />
-                            </pattern>
-                            <pattern id="goal" patternUnits="userSpaceOnUse" width="2" height="2">
-                                <rect x="0" y="0" width="2" height="2" fill="transparent" />
-                                <line x1="0" y1="0" x2="1" y2="0" class="goal-stripe" />
-                                <line x1="1" y1="0" x2="1" y2="1" class="goal-stripe" />
-                            </pattern>
-                            <!--<clipPath id="circleView">
-                                <circle cx="250" cy="125" r="25" fill="#FFFFFF" />            
-                            </clipPath>-->
-                        </defs>
-                        <!-- Cancha -->
-                        <path d="M 0,0 h1150 v780 h-1150z" class="turf" />
-                        <!-- Außenlinien -->
-                        <polyline points="575,730 575,50 1100,50 1100,730 50,730 50,50 575,50" class="line" />
-                        <!-- Contornos -->
-                        <circle cx="575" cy="390" class="line" r="91.5" />
-                        <!-- Punto Central -->
-                        <circle cx="575" cy="390" class="dot" />
-                        <!-- Puntos de penal -->
-                        <circle cx="160" cy="390" class="dot" />
-                        <circle cx="990" cy="390" class="dot" />
-                        <path d="M251.5,390 a91.5,91.5 0 0,0 -36.5,-73.4 M251.5,390 a91.5,91.5 0 0,1 -36.5,73.4 M898.5,390 a91.5,95.5 0 0,0 36.5,73.4 M898.5,390 a91.5,95.5 0 0,1 36.5,-73.4" class="line" />
-                        <!-- Esquinas -->
-                        <path d="M 50 60 Q 60 60 60 50 M 1090 50 Q 1090 60 1100 60 M 50 720 Q 60 720 60 730 M 1090 730 Q 1090 720 1100 720" class="line" />
-                        <!-- Arcos -->
-                        <polyline points="50,426.6 35,426.6 35,353.4 50,353.4" class="goal" />
-                        <polyline points="1100,426.6 1115,426.6 1115,353.4 1100,353.4" class="goal" />
-                        <!-- Areas / Areas de Castigo -->
-                        <polyline points="50,481.6 105,481.6 105,298.4 50,298.4 50,591.6 215,591.6 215,188.4 50,188.4" class="line" />
-                        <polyline points="1100,481.6 1045,481.6 1045,298.4 1100,298.4 1100,591.6 935,591.6 935,188.4 1100,188.4" class="line" />
-                        <!-- Arqueros -->
-                        <circle cx="100" cy="390" class="goalKeeper" />
-                        <circle cx="1050" cy="390" class="goalKeeper" />
-                        <!-- Defensas -->
-                        <circle cx="250" cy="165" class="goalKeeper" />
-                        <circle cx="200" cy="315" class="goalKeeper" />
-                        <circle cx="200" cy="465" class="goalKeeper" />
-                        <circle cx="250" cy="615" class="goalKeeper" />
-                        <circle cx="900" cy="165" class="goalKeeper" />
-                        <circle cx="950" cy="315" class="goalKeeper" />
-                        <circle cx="950" cy="465" class="goalKeeper" />
-                        <circle cx="900" cy="615" class="goalKeeper" />
-                        <!-- Mediocampos -->
-                        <circle cx="350" cy="165" class="goalKeeper" />
-                        <circle cx="350" cy="315" class="goalKeeper" />
-                        <circle cx="350" cy="465" class="goalKeeper" />
-                        <circle cx="350" cy="615" class="goalKeeper" />
-                        <circle cx="800" cy="165" class="goalKeeper" />
-                        <circle cx="800" cy="315" class="goalKeeper" />
-                        <circle cx="800" cy="465" class="goalKeeper" />
-                        <circle cx="800" cy="615" class="goalKeeper" />
-                        <!-- Delantera -->
-                        <circle cx="500" cy="315" class="goalKeeper" />
-                        <circle cx="500" cy="465" class="goalKeeper" />
-                        <circle cx="650" cy="315" class="goalKeeper" />
-                        <circle cx="650" cy="465" class="goalKeeper" />
-                        
-                        <!--<image class="img-thumbnail img-responsive" xlink:href="https://www.amrita.edu/sites/default/files/news-images/new/news-events/images/l-nov/grass.jpg" clip-path="url(#circleView)" />-->
-                    </svg>
-                  </div>
-                  <div class="col-2"></div>
-                </div>
-              </div>
+                <div><span><i class="far fa-futbol"></i>&nbsp&nbspO. PERALTA</span></div>
+                <div class="px-3"><span>61'</span></div>
             </div>
         </div>
+        <div class="col-4">
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <!-- MATCH INFO -->
+    <div class="row">
+
+      <div class="col-md-2 mb-1 px-1">
+        <img class="card-img img-responsive" src="http://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/11/29/15119690264622.jpg" alt="Card image">
+        <div class="card-img-overlay pt-1 px-2">
+          <span class="float-left badge badge-light round">Luzhniki</span><span class="float-right badge badge-light round">78241 / 80000</span>
+        </div>
+      </div>                        
+
+      <div class="col-md-2 mb-1 px-1">
+        <img class="card-img img-responsive" src="http://maps-moscow-ru.com/img/1200/moscow-on-map.jpg" alt="Card image">
+        <div class="card-img-overlay pt-1 px-2">
+          <span class="float-left badge badge-light round">Moscú</span><span class="float-right badge badge-light round"><i class="wi wi-day-cloudy-high"></i>16 °C</span>
+        </div>
+      </div>                        
+
+      <div class="col-md-2 mb-1 px-1">
+          <div class="card text-white bg-info">
+              <div class="card-body text-center" style="padding:2.4rem;">
+                  <h4 class="card-title">Referees</h4>
+              </div>        
+            </div>
+          </div>
+
+      <div class="col-md-2 mb-1 px-1">
+        <div class="card text-white bg-primary">
+          <div class="card-body text-center" style="padding:2.4rem;">
+              <h4 class="card-title">1 / 64</h4>
+          </div>        
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-1 px-1">
+        <div class="card text-white bg-success">
+          <div class="card-body text-center" style="padding:2.4rem;">
+              <h4 class="card-title">JOR 1 / 3</h4>
+          </div>        
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-1 px-1">
+        <div class="card text-white bg-secondary">
+          <div class="card-body text-center" style="padding:2.4rem;">
+              <span class="card-title">Jueves 14 Junio 10:00</span>
+          </div>        
+        </div>
+      </div>
+
+    </div>
+    <!-- LINE UP -->
+    <div class="row">
+      <div class="container-fluid text-center py-4">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <svg viewBox="0 0 1150 780" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="striped" patternUnits="userSpaceOnUse" width="4" height="4">
+                        <rect x="0" y="0" width="4" height="4" fill="transparent" />
+                        <path d="M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2" class="stripe" />
+                    </pattern>
+                    <pattern id="goal" patternUnits="userSpaceOnUse" width="2" height="2">
+                        <rect x="0" y="0" width="2" height="2" fill="transparent" />
+                        <line x1="0" y1="0" x2="1" y2="0" class="goal-stripe" />
+                        <line x1="1" y1="0" x2="1" y2="1" class="goal-stripe" />
+                    </pattern>
+                    <!--<clipPath id="circleView">
+                        <circle cx="250" cy="125" r="25" fill="#FFFFFF" />            
+                    </clipPath>-->
+                </defs>
+                <!-- Cancha -->
+                <path d="M 0,0 h1150 v780 h-1150z" class="turf" />
+                <!-- Außenlinien -->
+                <polyline points="575,730 575,50 1100,50 1100,730 50,730 50,50 575,50" class="line" />
+                <!-- Contornos -->
+                <circle cx="575" cy="390" class="line" r="91.5" />
+                <!-- Punto Central -->
+                <circle cx="575" cy="390" class="dot" />
+                <!-- Puntos de penal -->
+                <circle cx="160" cy="390" class="dot" />
+                <circle cx="990" cy="390" class="dot" />
+                <path d="M251.5,390 a91.5,91.5 0 0,0 -36.5,-73.4 M251.5,390 a91.5,91.5 0 0,1 -36.5,73.4 M898.5,390 a91.5,95.5 0 0,0 36.5,73.4 M898.5,390 a91.5,95.5 0 0,1 36.5,-73.4" class="line" />
+                <!-- Esquinas -->
+                <path d="M 50 60 Q 60 60 60 50 M 1090 50 Q 1090 60 1100 60 M 50 720 Q 60 720 60 730 M 1090 730 Q 1090 720 1100 720" class="line" />
+                <!-- Arcos -->
+                <polyline points="50,426.6 35,426.6 35,353.4 50,353.4" class="goal" />
+                <polyline points="1100,426.6 1115,426.6 1115,353.4 1100,353.4" class="goal" />
+                <!-- Areas / Areas de Castigo -->
+                <polyline points="50,481.6 105,481.6 105,298.4 50,298.4 50,591.6 215,591.6 215,188.4 50,188.4" class="line" />
+                <polyline points="1100,481.6 1045,481.6 1045,298.4 1100,298.4 1100,591.6 935,591.6 935,188.4 1100,188.4" class="line" />
+                <!-- Arqueros -->
+                <circle cx="100" cy="390" class="goalKeeper" />
+                <circle cx="1050" cy="390" class="goalKeeper" />
+                <!-- Defensas -->
+                <circle cx="250" cy="165" class="goalKeeper" />
+                <circle cx="200" cy="315" class="goalKeeper" />
+                <circle cx="200" cy="465" class="goalKeeper" />
+                <circle cx="250" cy="615" class="goalKeeper" />
+                <circle cx="900" cy="165" class="goalKeeper" />
+                <circle cx="950" cy="315" class="goalKeeper" />
+                <circle cx="950" cy="465" class="goalKeeper" />
+                <circle cx="900" cy="615" class="goalKeeper" />
+                <!-- Mediocampos -->
+                <circle cx="350" cy="165" class="goalKeeper" />
+                <circle cx="350" cy="315" class="goalKeeper" />
+                <circle cx="350" cy="465" class="goalKeeper" />
+                <circle cx="350" cy="615" class="goalKeeper" />
+                <circle cx="800" cy="165" class="goalKeeper" />
+                <circle cx="800" cy="315" class="goalKeeper" />
+                <circle cx="800" cy="465" class="goalKeeper" />
+                <circle cx="800" cy="615" class="goalKeeper" />
+                <!-- Delantera -->
+                <circle cx="500" cy="315" class="goalKeeper" />
+                <circle cx="500" cy="465" class="goalKeeper" />
+                <circle cx="650" cy="315" class="goalKeeper" />
+                <circle cx="650" cy="465" class="goalKeeper" />
+                
+                <!--<image class="img-thumbnail img-responsive" xlink:href="https://www.amrita.edu/sites/default/files/news-images/new/news-events/images/l-nov/grass.jpg" clip-path="url(#circleView)" />-->
+            </svg>
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
         
 </template>
